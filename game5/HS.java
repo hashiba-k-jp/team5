@@ -19,6 +19,6 @@ public class HS extends Actor
         move(1);
         setRotation(0);
 
-}
+        }
     }    
 }
