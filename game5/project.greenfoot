@@ -1,5 +1,9 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.tatu.image=seahorse.png
+=======
+class.s.image=frog.png
+>>>>>>> 5028969d34d225c037d532e1c9d002d664ed42b3
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -22,7 +26,11 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
+<<<<<<< HEAD
 target1.name=tatu
+=======
+target1.name=s
+>>>>>>> 5028969d34d225c037d532e1c9d002d664ed42b3
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
