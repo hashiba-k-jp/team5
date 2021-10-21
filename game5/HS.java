@@ -20,5 +20,9 @@ public class HS extends Actor
         setRotation(0);
 
         }
+        if( Greenfoot.isKeyDown( "right" ) ){
+        setRotation(0);
+        move(1);
+        }
     }    
 }
