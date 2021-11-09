@@ -1,21 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Write a description of class nBackGround here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class nBackGround extends World
 {
 
     /**
-     * Constructor for objects of class MyWorld.
+     * Constructor for objects of class nBackGround.
      * 
      */
-    public MyWorld()
+    public nBackGround()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(512, 314, 1); 
+        super(600, 400, 1); 
     }
 }
