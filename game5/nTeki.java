@@ -14,6 +14,6 @@ public class nTeki extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        getImage().scale( 100, 150 );// Add your action code here.
     }    
 }

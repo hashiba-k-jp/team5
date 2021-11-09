@@ -17,5 +17,16 @@ public class nBackGround extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        int A = 0;
+        int B = 400;
+        int C = 400;
+        int D = A + (int)(Math.random()*((B-A)+1));
+        int E = A + (int)(Math.random()*((C-A)+1));
+        addObject( new nItem(), D, E );
+        for(int i=0;i<10;i++){
+            int F = A + (int)(Math.random()*((B-A)+1));
+            int G = A + (int)(Math.random()*((C-A)+1));
+            addObject( new nTeki(), F, G );
     }
+}
 }
