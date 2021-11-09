@@ -13,31 +13,16 @@ public class HS extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {
-<<<<<<< HEAD
-
-
-        if( Greenfoot.isKeyDown( "left" ) ){
-        setRotation(0);
-        move(-1);
-    }
-
- 
-
-          // Add your action code here.
-        if( Greenfoot.isKeyDown( "up" ) ){
-        setRotation(-90);
-        move(1);
-        setRotation(0);
-}
-
-=======
-          // Add your action code here.
-        if( Greenfoot.isKeyDown( "up" ) ){
+        {
+            if( Greenfoot.isKeyDown( "left" ) ){
+            setRotation(0);
+            move(-1);
+        }
+            if( Greenfoot.isKeyDown( "up" ) ){
             setRotation(-90);
             move(1);
+            setRotation(0);
         }
->>>>>>> c83f607fce73b69f9be54290f0cec1e1faae0ebf
         if( Greenfoot.isKeyDown( "down" ) ){
             setRotation(90);
             move(1);
@@ -47,10 +32,6 @@ public class HS extends Actor
             setRotation(0);
             move(1);
         }
-<<<<<<< HEAD
-
-}
-=======
-    }    
->>>>>>> c83f607fce73b69f9be54290f0cec1e1faae0ebf
-}
+    }
+}    
+// test 20211109
