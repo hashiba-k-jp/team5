@@ -12,8 +12,7 @@ public class HS extends Actor
      * Act - do whatever the HS wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
-    {
+    public void act(){
         if( Greenfoot.isKeyDown( "left" ) ){
             setRotation(0);
             move(-1);
@@ -21,6 +20,7 @@ public class HS extends Actor
         if( Greenfoot.isKeyDown( "up" ) ){
             setRotation(-90);
             move(1);
+            setRotation(0);
         }
         if( Greenfoot.isKeyDown( "down" ) ){
             setRotation(90);
@@ -31,5 +31,6 @@ public class HS extends Actor
             setRotation(0);
             move(1);
         }
-    }
+    }    
+// test 20211109
 }
