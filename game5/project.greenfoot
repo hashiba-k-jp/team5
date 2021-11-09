@@ -35,7 +35,11 @@ target1.width=100
 target1.x=0
 target1.y=0
 target2.height=50
+<<<<<<< HEAD
 target2.name=C
+=======
+target2.name=nSousa
+>>>>>>> ce3540090ede37f4f598395dbb324dc48f6000c7
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
