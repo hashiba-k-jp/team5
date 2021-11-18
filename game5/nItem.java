@@ -12,8 +12,11 @@ public class nItem extends Actor
      * Act - do whatever the nItem wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public nItem(){
+        getImage().scale( 75 , 75 );
+    }
     public void act() 
     {
-        getImage().scale( 50, 50 );// Add your action code here.
+        // Add your action code here.
     }    
 }
