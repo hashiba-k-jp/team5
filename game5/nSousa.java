@@ -6,6 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
+
 public class nSousa extends Actor
 {
     /**
@@ -14,6 +15,6 @@ public class nSousa extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        getImage().scale( 75, 75 );// Add your action code here.
     }    
 }
