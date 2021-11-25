@@ -37,14 +37,5 @@ public class nSousa extends Actor
         setRotation(0);
         move(4);
       }
-      Actor actor_a = getOneIntersectingObject( nItem.class );
-        if( actor_a != null ){
-            getWorld().removeObject( actor_a );
-        }
-      Actor actor_b = getOneIntersectingObject( nTeki.class );
-       if( actor_b != null ){
-            getWorld().removeObject( this );
-            Greenfoot.stop();
-       }
     }    
 }
