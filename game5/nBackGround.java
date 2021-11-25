@@ -31,5 +31,5 @@ public class nBackGround extends World
         }
         addObject( new startButton(), 300, 200);
         addObject( new nSousa(), 50, 50);
-}
+    }
 }
