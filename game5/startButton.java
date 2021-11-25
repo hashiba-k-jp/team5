@@ -22,5 +22,8 @@ public class startButton extends Actor
     }
     public void act() 
     {
+        if(Greenfoot.mouseClicked( this )){
+            getWorld().removeObject( this );
+        }
     }
 }
