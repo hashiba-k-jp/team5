@@ -22,8 +22,23 @@ public class startButton extends Actor
     }
     public void act() 
     {
-        if(Greenfoot.mouseClicked( this )){
+        if ( Greenfoot.mouseClicked( this )){
             getWorld().removeObject( this );
+            
+            int A = 0;
+            int B = 600;
+            int C = 400;
+
+            int D = A + (int)(Math.random()*((B-A)+1));
+            int E = A + (int)(Math.random()*((C-A)+1));
+            getWorld().addObject( this, D, E );
+
+            for(int i=0;i<15;i++){
+                int F = A + (int)(Math.random()*((B-A)+1));
+                int G = A + (int)(Math.random()*((C-A)+1));
+                getWorld().addObject( new nTeki(), F, G );
+            }
+            getWorld().addObject( new nSousa(), 50, 50);
         }
     }
 }

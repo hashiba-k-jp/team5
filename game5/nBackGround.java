@@ -22,14 +22,11 @@ public class nBackGround extends World
         int C = 400;
         int D = A + (int)(Math.random()*((B-A)+1));
         int E = A + (int)(Math.random()*((C-A)+1));
-        addObject( new nItem(), D, E );
-        for(int i=0;i<15;i++){
-            int F = A + (int)(Math.random()*((B-A)+1));
-            int G = A + (int)(Math.random()*((C-A)+1));
-            addObject( new nTeki(), F, G );
-       
-        }
-        addObject( new startButton(), 300, 200);
-        addObject( new nSousa(), 50, 50);
+        
+        Actor Button = new startButton();
+        addObject( Button, 300, 200);
+
+    
+    
     }
 }
