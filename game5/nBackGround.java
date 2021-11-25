@@ -22,7 +22,11 @@ public class nBackGround extends World
         int C = 400;
         int D = A + (int)(Math.random()*((B-A)+1));
         int E = A + (int)(Math.random()*((C-A)+1));
-        addObject( new nItem(), D, E );
+        for(int i=0;i<3;i++){
+            int H = A + (int)(Math.random()*((B-A)+1));
+            int I = A + (int)(Math.random()*((C-A)+1));
+            addObject( new nItem(), H, I );
+        }
         for(int i=0;i<15;i++){
             int F = A + (int)(Math.random()*((B-A)+1));
             int G = A + (int)(Math.random()*((C-A)+1));
