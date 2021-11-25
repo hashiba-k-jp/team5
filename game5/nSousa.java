@@ -14,7 +14,7 @@ public class nSousa extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public nSousa(){
-        getImage().scale( 75, 75 );
+        getImage().scale( 50, 50 );
     }
     
     public void act() 
