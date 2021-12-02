@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class nBackGround extends World
 {
-    private int timecount = 1000;
     /**
      * Constructor for objects of class nBackGround.
      * 
@@ -21,12 +20,5 @@ public class nBackGround extends World
         addObject(SButton, 300, 200);
     }
     public void act(){
-        timecount=timecount-1;
-        showText( "timecount = " + timecount , 100, 50 );
-        if(timecount <= 0)
-        {
-          addObject( new gameOver(), 300, 200 );
-          Greenfoot.stop();  
-        }
     }
 }

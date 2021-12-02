@@ -13,14 +13,21 @@ public class nSousa extends Actor
      * Act - do whatever the nSousa wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public int timecount = 1000;
+
     public nSousa(){
         getImage().scale( 50, 50 );
+
     }
-    
     public void act() 
     {
-        boolean removeAfterHit = true;
-        
+        timecount--;
+        getWorld().showText( "time\n" + timecount , 100, 50 );
+        if(timecount <= 0)
+        {
+          getWorld().addObject( new gameOver(), 300, 200 );
+          Greenfoot.stop();  
+        }
         if( Greenfoot.isKeyDown( "up" ) ){
         setRotation(-90);
         move(4);
@@ -41,12 +48,12 @@ public class nSousa extends Actor
         }
         Actor actor_a = getOneIntersectingObject( nItem.class );
         if( actor_a != null ){
-            removeAfterHit = false;
             getWorld().removeObject( actor_a );
         }
         Actor actor_b = getOneIntersectingObject( nTeki.class );
-        if( actor_b != null && !(removeAfterHit == true)){
+        if( actor_b != null ){
             getWorld().removeObject( this );
+            
             Greenfoot.stop();
         }
       }
