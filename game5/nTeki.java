@@ -14,9 +14,16 @@ public class nTeki extends Actor
      */
     public nTeki(){
         getImage().scale( 55, 80 );
+        getImage().scale(30, 43);
+        // 40, 65
     }
     public void act() 
     {
-        // Add your action code here.
+        Actor actor_b = getOneIntersectingObject( nSousa.class );
+       if( actor_b != null ){
+            getWorld().removeObject( actor_b );
+            
+            Greenfoot.stop();
+       }
     }    
 }

@@ -17,9 +17,9 @@ public class nItem extends Actor
     }
     public void act() 
     {
-        Actor actor = getOneIntersectingObject( nItem.class );
+        Actor actor = getOneIntersectingObject( nSousa.class );
         if( actor != null ){
-            getWorld().removeObject( actor );
+            getWorld().removeObject( this );
         }
     }    
 }
