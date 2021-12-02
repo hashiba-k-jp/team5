@@ -14,6 +14,8 @@ public class nSousa extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public int timecount = 1000;
+    public boolean movailbe = true;
+    public boolean removeAfterHit = true;
 
     public nSousa(){
         getImage().scale( 50, 50 );
@@ -49,9 +51,11 @@ public class nSousa extends Actor
         Actor actor_a = getOneIntersectingObject( nItem.class );
         if( actor_a != null ){
             getWorld().removeObject( actor_a );
+            removeAfterHit = false;
         }
         Actor actor_b = getOneIntersectingObject( nTeki.class );
-        if( actor_b != null ){
+        if( (actor_b != null) && (removeAfterHit) ){
+            getWorld().addObject( new gameOver(), 300, 200 );
             getWorld().removeObject( this );
             Greenfoot.stop();
         }
