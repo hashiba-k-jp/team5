@@ -53,7 +53,6 @@ public class nSousa extends Actor
         Actor actor_b = getOneIntersectingObject( nTeki.class );
         if( actor_b != null ){
             getWorld().removeObject( this );
-            
             Greenfoot.stop();
         }
       }
