@@ -36,6 +36,7 @@ public class nSousa extends Actor
         if( Greenfoot.isKeyDown( "right" ) ){
         setRotation(0);
         move(4);
+<<<<<<< HEAD
         }
         Actor actor_a = getOneIntersectingObject( nItem.class );
         if( actor_a != null ){
@@ -46,5 +47,8 @@ public class nSousa extends Actor
             getWorld().removeObject( this );
             Greenfoot.stop();
         }
+=======
+      }
+>>>>>>> 61d67cc6f2c19189c997a76b5e350ae58f81e3b9
     }    
 }
