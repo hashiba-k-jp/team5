@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class nBackGround extends World
 {
-
     /**
      * Constructor for objects of class nBackGround.
      * 
@@ -17,23 +16,9 @@ public class nBackGround extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        int A = 0;
-        int B = 600;
-        int C = 400;
-        int D = A + (int)(Math.random()*((B-A)+1));
-        int E = A + (int)(Math.random()*((C-A)+1));
-        for(int i=0;i<3;i++){
-            int H = A + (int)(Math.random()*((B-A)+1));
-            int I = A + (int)(Math.random()*((C-A)+1));
-            addObject( new nItem(), H, I );
-        }
-        for(int i=0;i<15;i++){
-            int F = A + (int)(Math.random()*((B-A)+1));
-            int G = A + (int)(Math.random()*((C-A)+1));
-            addObject( new nTeki(), F, G );
-       
-        }
-        addObject( new startButton(), 300, 200);
-        addObject( new nSousa(), 50, 50);
+        Actor SButton = new startButton();
+        addObject(SButton, 300, 200);
+    }
+    public void act(){
     }
 }
