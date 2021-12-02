@@ -1,4 +1,6 @@
 #Greenfoot project file
+class.gameClear.image=text_gameclear_j.png
+class.gameOver.image=text_gameover_j.png
 class.hBackGround.image=\u30BD\u9023\u80CC\u666F.png
 class.hItem.image=260px-Hammer_and_sickle.svg.png
 class.nBackGround.image=bg_snow_diamond_dust.jpg
@@ -42,10 +44,10 @@ dependency8.type=UsesDependency
 dependency9.from=startButton
 dependency9.to=nItem
 dependency9.type=UsesDependency
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=100
+editor.fx.0.height=1056
+editor.fx.0.width=1936
+editor.fx.0.x=-8
+editor.fx.0.y=-8
 height=777
 package.numDependencies=12
 package.numTargets=10
