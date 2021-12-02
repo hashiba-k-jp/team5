@@ -19,6 +19,8 @@ public class nSousa extends Actor
     
     public void act() 
     {
+        boolean removeAfterHit = true;
+        
         if( Greenfoot.isKeyDown( "up" ) ){
         setRotation(-90);
         move(4);
@@ -39,10 +41,11 @@ public class nSousa extends Actor
         }
         Actor actor_a = getOneIntersectingObject( nItem.class );
         if( actor_a != null ){
+            removeAfterHit = false;
             getWorld().removeObject( actor_a );
         }
         Actor actor_b = getOneIntersectingObject( nTeki.class );
-        if( actor_b != null ){
+        if( actor_b != null && !(removeAfterHit == true)){
             getWorld().removeObject( this );
             Greenfoot.stop();
         }
