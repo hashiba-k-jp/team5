@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class nBackGround extends World
 {
-
+    private int timecount = 1000;
     /**
      * Constructor for objects of class nBackGround.
      * 
@@ -16,6 +16,7 @@ public class nBackGround extends World
     public nBackGround()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        
         super(600, 400, 1); 
         int A = 0;
         int B = 600;
@@ -27,7 +28,7 @@ public class nBackGround extends World
             int I = A + (int)(Math.random()*((C-A)+1));
             addObject( new nItem(), H, I );
         }
-        for(int i=0;i<15;i++){
+        for(int i=0;i<12;i++){
             int F = A + (int)(Math.random()*((B-A)+1));
             int G = A + (int)(Math.random()*((C-A)+1));
             addObject( new nTeki(), F, G );
