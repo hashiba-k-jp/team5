@@ -13,7 +13,8 @@ public class nTeki extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public nTeki(){
-        getImage().scale( 40, 65 );
+        getImage().scale(30, 43);
+        // 40, 65
     }
     public void act() 
     {

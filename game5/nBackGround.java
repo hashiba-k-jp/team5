@@ -23,10 +23,7 @@ public class nBackGround extends World
         int D = A + (int)(Math.random()*((B-A)+1));
         int E = A + (int)(Math.random()*((C-A)+1));
         
-        Actor Button = new startButton();
-        addObject( Button, 300, 200);
-
-    
-    
+        Actor SButton = new startButton();
+        addObject(SButton, 300, 200);
     }
 }

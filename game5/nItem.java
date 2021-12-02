@@ -17,6 +17,9 @@ public class nItem extends Actor
     }
     public void act() 
     {
-        // Add your action code here.
+        Actor actor = getOneIntersectingObject( nItem.class );
+        if( actor != null ){
+            getWorld().removeObject( actor );
+        }
     }    
 }
