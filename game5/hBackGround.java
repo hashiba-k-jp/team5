@@ -24,15 +24,14 @@ public class hBackGround extends World
         int A = 0;
         int B = 600;
         int C = 400;
-        for(int i=0; i<15; i++){
-            int F = A + (int)(Math.random()*((B-A)+1));
-            int G = A + (int)(Math.random()*((C-A)+1));
-            if( ((0 <= F ) &&( F <= 100)) || ((0 <= G) && ( G <= 100)) ){
-                i--;
-                continue;
-            }
-            addObject( new hTank(), F, G );
-        }
+        int F = 100;
+        addObject( new hTank(), 500, 050 );
+        addObject( new hTank(), 500, 100 );
+        addObject( new hTank(), 500, 150 );
+        addObject( new hTank(), 500, 250 );
+        addObject( new hTank(), 500, 300 );
+        addObject( new hTank(), 500, 350 );
+
         // addObject( new hItem(), C, D );
         
     }

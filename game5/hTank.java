@@ -15,6 +15,6 @@ public class hTank extends Actor
     public void act()
     {
         // Add your action code here.
-        getImage().scale( 100, 100 );
+        getImage().scale( 100, 50);
     }
 }
