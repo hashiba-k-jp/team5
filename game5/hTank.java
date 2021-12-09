@@ -16,8 +16,9 @@ public class hTank extends Actor
     {
         // Add your action code here.
         getImage().scale(100, 50);
-        
+
         int randomeTime = 100 + (int)(Math.random()*((200-100)+1));
+        getWorld().addObject( new hmissile(), getX(), getY() );
 
     }
 }
