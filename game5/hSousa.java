@@ -29,6 +29,10 @@ public class hSousa extends Actor
           getWorld().addObject( new gameOver(), 300, 200 );
           Greenfoot.stop();  
         }
+    
+        // Add your action code here.
+        getImage().scale( 100, 100 );
+
         if( Greenfoot.isKeyDown( "up" ) ){
         setRotation(-90);
         move(4);
@@ -47,6 +51,7 @@ public class hSousa extends Actor
         setRotation(0);
         move(4);
         }
+
         // when the nSouse (player) hit the nItem (snowman)
         Actor actor_a = getOneIntersectingObject( hItem.class );
         if( actor_a != null ){
@@ -64,3 +69,6 @@ public class hSousa extends Actor
         }
       }
     }    
+
+
+
