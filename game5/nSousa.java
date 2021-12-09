@@ -19,7 +19,6 @@ public class nSousa extends Actor
 
     public nSousa(){
         getImage().scale( 50, 50 );
-
     }
     public void act() 
     {
@@ -48,11 +47,15 @@ public class nSousa extends Actor
         setRotation(0);
         move(4);
         }
+        // when the nSouse (player) hit the nItem (snowman)
         Actor actor_a = getOneIntersectingObject( nItem.class );
         if( actor_a != null ){
             getWorld().removeObject( actor_a );
             removeAfterHit = false;
+            Greenfoot.setWorld( new hBackGround() );
+
         }
+        // when the nSouse (player) hit the nTeki (black man)
         Actor actor_b = getOneIntersectingObject( nTeki.class );
         if( (actor_b != null) && (removeAfterHit) ){
             getWorld().addObject( new gameOver(), 300, 200 );
