@@ -61,7 +61,7 @@ public class hSousa extends Actor
 
         }
         // when the nSouse (player) hit the nTeki (black man)
-        Actor actor_b = getOneIntersectingObject( hTeki.class );
+        Actor actor_b = getOneIntersectingObject( hTank.class );
         if( (actor_b != null) && (removeAfterHit) ){
             getWorld().addObject( new gameOver(), 300, 200 );
             getWorld().removeObject( this );
