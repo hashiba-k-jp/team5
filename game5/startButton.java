@@ -32,7 +32,8 @@ public class startButton extends Actor
             int E = A + (int)(Math.random()*((C-A)+1));
             
             Actor nitem = new nItem();
-            getWorld().addObject( nitem, 300, 200 );
+            // getWorld().addObject( nitem, 300, 200 );
+            getWorld().addObject( nitem, 150, 50 );
 
             for(int i=0; i<15; i++){
                 int F = A + (int)(Math.random()*((B-A)+1));

@@ -15,10 +15,10 @@ public class hTank extends Actor
     public void act()
     {
         // Add your action code here.
-        getImage().scale(100, 50);
+        getImage().scale(80, 30);
 
-        int randomeTime = 100 + (int)(Math.random()*((200-100)+1));
-        getWorld().addObject( new hmissile(), getX(), getY() );
+        // int randomeTime = 100 + (int)(Math.random()*((200-100)+1));
+        // getWorld().addObject( new hmissile(), getX(), getY() );
 
     }
 }
