@@ -22,9 +22,17 @@ public class hBackGround extends World
         addObject( new hSousa(), 50, 50);
         
         int A = 0;
-        int B = 400;
-        int C = A + (int)(Math.random()*((B-A)+1));
-        int D = A + (int)(Math.random()*((B-A)+1));
+        int B = 600;
+        int C = 400;
+        for(int i=0; i<15; i++){
+            int F = A + (int)(Math.random()*((B-A)+1));
+            int G = A + (int)(Math.random()*((C-A)+1));
+            if( ((0 <= F ) &&( F <= 100)) || ((0 <= G) && ( G <= 100)) ){
+                i--;
+                continue;
+            }
+            addObject( new hTank(), F, G );
+        }
         // addObject( new hItem(), C, D );
         
     }
