@@ -25,12 +25,14 @@ public class hBackGround extends World
         int B = 600;
         int C = 400;
         int F = 100;
+
         addObject( new hTank(), 500, 050 );
         addObject( new hTank(), 500, 100 );
         addObject( new hTank(), 500, 150 );
         addObject( new hTank(), 500, 275 );
         addObject( new hTank(), 500, 325 );
         addObject( new hTank(), 500, 375 );
+        
 
         // addObject( new hItem(), C, D );
 
