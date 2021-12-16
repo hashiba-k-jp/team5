@@ -58,7 +58,6 @@ public class hSousa extends Actor
             getWorld().removeObject( actor_a );
             removeAfterHit = false;
             Greenfoot.setWorld( new hBackGround() );
-
         }
         // when the nSouse (player) hit the nTeki (black man)
         Actor actor_b = getOneIntersectingObject( hTank.class );
