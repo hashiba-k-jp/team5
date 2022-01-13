@@ -2,8 +2,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class hSousa here.
- * 
- * @author (your name) 
+ *
+ * @author (your name)
  * @version (a version number or a date)
  */
 public class hSousa extends Actor
@@ -13,23 +13,24 @@ public class hSousa extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
 
-        public int timecount = 1000;
+    public int timecount = 1000;
     public boolean movailbe = true;
     public boolean removeAfterHit = true;
 
     public hSousa(){
         getImage().scale( 50, 50 );
+        timecount = 1000;
     }
-    public void act() 
+    public void act()
     {
         timecount--;
         getWorld().showText( "time\n" + timecount , 100, 50 );
         if(timecount <= 0)
         {
           getWorld().addObject( new gameOver(), 300, 200 );
-          Greenfoot.stop();  
+          Greenfoot.stop();
         }
-    
+
         // Add your action code here.
         getImage().scale( 100, 100 );
 
@@ -53,21 +54,18 @@ public class hSousa extends Actor
         }
 
         // when the nSouse (player) hit the nItem (snowman)
-        Actor actor_a = getOneIntersectingObject( hItem.class );
-        if( actor_a != null ){
-            getWorld().removeObject( actor_a );
+        Actor actor_c = getOneIntersectingObject( hItem.class );
+        if( actor_c != null ){
+            getWorld().removeObject( actor_c );
             removeAfterHit = false;
             Greenfoot.setWorld( new hBackGround() );
         }
         // when the nSouse (player) hit the nTeki (black man)
-        Actor actor_b = getOneIntersectingObject( hTank.class );
-        if( (actor_b != null) && (removeAfterHit) ){
+        Actor actor_d = getOneIntersectingObject( hTank.class );
+        if( (actor_d != null) && (removeAfterHit) ){
             getWorld().addObject( new gameOver(), 300, 200 );
             getWorld().removeObject( this );
             Greenfoot.stop();
         }
       }
-    }    
-
-
-
+    }
