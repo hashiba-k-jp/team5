@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.Random;
 
 /**
  * Write a description of class hTank here.
@@ -19,6 +20,12 @@ public class hTank extends Actor
     public void act()
     {
         // Add your action code here.
+        Random rand = new Random();
+        int num = rand.nextInt(100);
 
+        // shoot randomely at 1/100 probablity
+        if (num == 0){
+            getWorld().addObject( new hmissile(), 50, 50);
+        }
     }
 }
