@@ -21,6 +21,7 @@ public class hSousa extends Actor
 
     public hSousa(){
         getImage().scale( 50, 50 );
+        getImage().mirrorHorizontally();
     }
     public void act()
     {
@@ -36,18 +37,13 @@ public class hSousa extends Actor
         getImage().scale( 100, 100 );
 
         if( Greenfoot.isKeyDown( "up" ) ){
-            setRotation(-90);
-            move(4);
+            move(8);
             setRotation(0);
         }
         if( Greenfoot.isKeyDown( "down" ) ){
             setRotation(90);
-            move(4);
+            move(8);
             setRotation(0);
-        }
-        if( Greenfoot.isKeyDown( "left" ) ){
-            setRotation(0);
-            move(-4);
         }
         if( Greenfoot.isKeyDown( "right" ) ){
             setRotation(0);
