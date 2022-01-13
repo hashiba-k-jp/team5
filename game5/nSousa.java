@@ -16,6 +16,7 @@ public class nSousa extends Actor
     public int timecount = 1000;
     public boolean movailbe = true;
     public boolean removeAfterHit = true;
+    public boolean nEnded = false;
 
     public nSousa(){
         getImage().scale( 50, 50 );
@@ -53,10 +54,11 @@ public class nSousa extends Actor
             getWorld().removeObject( actor_a );
             removeAfterHit = false;
             Greenfoot.setWorld( new hBackGround() );
+            nEnded = true;
         }
         // when the nSouse (player) hit the nTeki (black man)
         Actor actor_b = getOneIntersectingObject( nTeki.class );
-        if( (actor_b != null) && (removeAfterHit) ){
+        if( (actor_b != null) && (removeAfterHit)){
             getWorld().addObject( new gameOver(), 300, 200 );
             getWorld().removeObject( this );
             Greenfoot.stop();
