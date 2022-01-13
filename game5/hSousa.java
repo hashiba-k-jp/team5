@@ -37,17 +37,18 @@ public class hSousa extends Actor
         getImage().scale( 100, 100 );
 
         if( Greenfoot.isKeyDown( "up" ) ){
-            move(8);
+            setRotation(-90);
+            move(5);
             setRotation(0);
         }
         if( Greenfoot.isKeyDown( "down" ) ){
             setRotation(90);
-            move(8);
+            move(5);
             setRotation(0);
         }
         if( Greenfoot.isKeyDown( "right" ) ){
             setRotation(0);
-            move(4);
+            move(2);
         }
         // when the nSouse (player) hit the nItem (snowman)
         Actor actor_c = getOneIntersectingObject( hItem.class );
