@@ -91,9 +91,11 @@ public class nBackGround extends World
     {
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
-        showTextEx( "Mission- Snowmans Revolution ", 300, 70, 50, true, Color.RED );
+        showTextEx( "Mission- Snowmans Revolution ", 300, 100, 50, true, Color.RED );
+        showTextEx( "(カーソルキーで移動してキーアイテムを手に入れよう！)" , 300, 150, 28, true, Color.GREEN);
+        showTextEx( "スタートボタンをクリックしてね！" , 300, 200, 30, true, Color.GREEN );
         Actor SButton = new startButton();
-        addObject(SButton, 300, 200);
+        addObject(SButton, 300, 250);
     }
     public void act(){
     }
