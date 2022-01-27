@@ -97,9 +97,6 @@ public class nBackGround extends World
         Actor SButton = new startButton();
         addObject(SButton, 300, 250);
     }
-    public void act(){
-    }
-    
 }
 /**
  * Write a description of class nBackGround here.

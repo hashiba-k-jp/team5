@@ -45,6 +45,9 @@ public class startButton extends Actor
                 getWorld().addObject( new nTeki(), F, G );
             }
             getWorld().showText( "", 300, 70);
+            getWorld().showText( "", 300, 100);
+            getWorld().showText( "", 300, 150);
+            getWorld().showText( "", 300, 200);
             getWorld().addObject( new nSousa(), 50, 50);
             getWorld().removeObject( this );
             
