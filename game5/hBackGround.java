@@ -25,6 +25,10 @@ public class hBackGround extends World
         int B = 600;
         int C = 400;
         int F = 100;
+        
+        Actor hItem = new hItem();
+        
+        addObject( new hItem(), 500, 210 );
 
         addObject( new hTank(), 500, 050 );
         addObject( new hTank(), 500, 100 );

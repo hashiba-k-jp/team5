@@ -14,6 +14,6 @@ public class hItem extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        getImage().scale( 55 , 55 );
     }    
 }
