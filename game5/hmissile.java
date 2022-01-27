@@ -18,6 +18,7 @@ public class hmissile extends Actor
     int xTargets[] = new int[length];
     int yTargets[] = new int[length];
     int sumX, sumY, x, y;
+    int totalTime = 125;
     
     // i := input
     public hmissile(int xTargeti, int yTargeti, int xOrigini, int yOrigini){
@@ -42,13 +43,16 @@ public class hmissile extends Actor
             }
         }
 
-        x = xOrigin + (TargetX - xOrigin) * i / 100;
-        y = yOrigin + (TargetY - yOrigin) * i / 100;
+        x = xOrigin + (TargetX - xOrigin) * i / totalTime;
+        y = yOrigin + (TargetY - yOrigin) * i / totalTime;
         // move(10);
         this.setLocation((int)x, (int)y);
         // Add your action code here.
         i++;
-        if(100 <= i){
+        if(totalTime*3 <= i){
+            getWorld().removeObject( this );
+        }
+        if( isAtEdge() ){
             getWorld().removeObject( this );
         }
     }

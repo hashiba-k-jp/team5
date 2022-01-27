@@ -21,7 +21,7 @@ public class hTank extends Actor
     {
         // Add your action code here.
         Random rand = new Random();
-        int num = rand.nextInt(100);
+        int num = rand.nextInt(125);
         int targetX = 0;
         int targetY = 0;
         // get location of hSousa

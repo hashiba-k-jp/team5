@@ -18,9 +18,8 @@ public class hSousa extends Actor
     public boolean movailbe = true;
     public boolean hremoveAfterHit = true;
 
-
     public hSousa(){
-        getImage().scale( 100, 100 );
+        getImage().scale( 35, 35 );
         getImage().mirrorHorizontally();
     }
     public void act()
@@ -34,7 +33,6 @@ public class hSousa extends Actor
         }
 
         // Add your action code here.
-        getImage().scale( 100, 100 );
 
         if( Greenfoot.isKeyDown( "up" ) ){
             setRotation(-90);
