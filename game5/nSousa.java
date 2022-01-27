@@ -68,5 +68,11 @@ public class nSousa extends Actor
             getWorld().removeObject( this );
             Greenfoot.stop();
         }
+        Actor actor_c = getOneIntersectingObject( hItem.class );
+        if( (actor_c != null) && (removeAfterHit)){
+            getWorld().addObject( new gameClear(), 300, 200 );
+            getWorld().removeObject( this );
+            Greenfoot.stop();
+        }
       }
     }
