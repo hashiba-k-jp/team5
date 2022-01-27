@@ -12,14 +12,15 @@ public class hmissile extends Actor
      * Act - do whatever the hmissile wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+
     public hmissile(){
-        this.setRotation(0);
-        getImage().scale(60, 30);
-
+        this.setRotation(-180);
+        getImage().scale(30, 15);
     }
-    public void act()
+    public void act(int xTargetF)
     {
-
+        if (xTargetF == 0){
+        }
         // Add your action code here.
     }
 }

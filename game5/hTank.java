@@ -22,10 +22,21 @@ public class hTank extends Actor
         // Add your action code here.
         Random rand = new Random();
         int num = rand.nextInt(100);
+        int targetX = 0;
+        int targetY = 0;
+        // get location of hSousa
+        //int target = getOneIntersectingObject( hSousa.class ).getX();
+        if (! getWorld().getObjects(hSousa.class).isEmpty())
+        {
+            Actor hSousa = (Actor)getWorld().getObjects(hSousa.class).get(0);
+            targetX = hSousa.getX();
+            targetY = hSousa.getY();
+        }
+        // int targetX = target.getX();
 
         // shoot randomely at 1/100 probablity
         if (num == 0){
-            getWorld().addObject( new hmissile(), 50, 50);
+            getWorld().addObject( new hmissile(), targetX, targetY);
         }
     }
 }
