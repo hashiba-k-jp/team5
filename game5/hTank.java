@@ -36,7 +36,9 @@ public class hTank extends Actor
 
         // shoot randomely at 1/100 probablity
         if (num == 0){
-            getWorld().addObject( new hmissile(), targetX, targetY);
+            Actor new_hmissile = new hmissile(targetX, targetY, this.getX(), this.getY());
+            getWorld().addObject( new_hmissile, this.getX(), this.getY());
+            new_hmissile.act();
         }
     }
 }

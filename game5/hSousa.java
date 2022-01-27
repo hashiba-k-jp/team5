@@ -59,8 +59,9 @@ public class hSousa extends Actor
 
         }
         // when the nSouse (player) hit the nTeki (black man)
-        Actor actor_d = getOneIntersectingObject( hTank.class );
-        if((actor_d != null) && (hremoveAfterHit)){
+        Actor actor_tank = getOneIntersectingObject( hTank.class );
+        Actor actor_missile = getOneIntersectingObject( hmissile.class );
+        if(((actor_tank != null) || (actor_missile != null)) && (hremoveAfterHit)){
             getWorld().addObject( new gameOver(), 300, 200 );
             getWorld().removeObject( this );
             Greenfoot.stop();
