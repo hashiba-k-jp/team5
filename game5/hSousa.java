@@ -20,7 +20,7 @@ public class hSousa extends Actor
 
 
     public hSousa(){
-        getImage().scale( 50, 50 );
+        getImage().scale( 100, 100 );
         getImage().mirrorHorizontally();
     }
     public void act()

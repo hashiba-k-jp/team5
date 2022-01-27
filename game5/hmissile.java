@@ -13,7 +13,11 @@ public class hmissile extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     int i = 0;
-    int xOrigin, yOrigin, xTarget, yTarget;
+    int xOrigin, yOrigin, TargetX, TargetY;
+    int length = 20;
+    int xTargets[] = new int[length];
+    int yTargets[] = new int[length];
+    int sumX, sumY, x, y;
     
     // i := input
     public hmissile(int xTargeti, int yTargeti, int xOrigini, int yOrigini){
@@ -21,16 +25,25 @@ public class hmissile extends Actor
         getImage().scale(30, 15);
         xOrigin = xOrigini;
         yOrigin = yOrigini;
-        xTarget = xTargeti;
-        yTarget = yTargeti;
-        
+        TargetX = xTargeti;
+        TargetY = yTargeti;
     }
-    // Origin, Target
+    // Origin, Target    
     public void act()
     {
-        double x, y;
-        x = xOrigin + (xTarget - xOrigin) * i / 100;
-        y = yOrigin + (yTarget - yOrigin) * i / 100;
+        // get location of hSousa
+        //int target = getOneIntersectingObject( hSousa.class ).getX();
+        if( false ){
+            if (! getWorld().getObjects(hSousa.class).isEmpty())
+            {
+                Actor hSousa = (Actor)getWorld().getObjects(hSousa.class).get(0);
+                TargetX = hSousa.getX();
+                TargetY = hSousa.getY();
+            }
+        }
+
+        x = xOrigin + (TargetX - xOrigin) * i / 100;
+        y = yOrigin + (TargetY - yOrigin) * i / 100;
         // move(10);
         this.setLocation((int)x, (int)y);
         // Add your action code here.
